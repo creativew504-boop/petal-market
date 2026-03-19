@@ -153,8 +153,7 @@ const AdminLayout = () => {
 
       {/* Main area */}
       <div
-        className="flex-1 flex flex-col transition-all duration-300"
-        style={{ marginLeft: typeof window !== 'undefined' && window.innerWidth >= 1024 ? (collapsed ? 72 : 260) : 0 }}
+        className={`flex-1 flex flex-col transition-all duration-300 ${collapsed ? 'lg:ml-[72px]' : 'lg:ml-[260px]'}`}
       >
         {/* Topbar */}
         <header className="sticky top-0 z-20 h-16 border-b border-border bg-card/80 backdrop-blur-xl flex items-center justify-between px-4 md:px-6">
